@@ -7,76 +7,107 @@
     android:orientation="vertical"
     android:padding="24dp"
     tools:context=".MainActivity">
-    
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/quintessential"
         android:text="PRIMER EXAMEN PARCIAL"
-        />
+        android:textAlignment="center"
+        android:textColor="#3F51B5" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/quintessential"
         android:text="Rosmery Suriano"
-        />
+        android:textAlignment="center"
+        android:textColor="#3F51B5" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/quintessential"
         android:text="APLICACIÓN DE REGISTRO"
-        />
+        android:textAlignment="center" />
+
     <EditText
         android:id="@+id/etNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nombre"
-        />
-    <LinearLayout
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/quintessential"
+        android:hint="Nombre" />
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
         <EditText
             android:id="@+id/etGenero"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:width="160dp"
+            android:fontFamily="@font/quintessential"
             android:hint="Genero"
-            />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <EditText
             android:id="@+id/etEdad"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:width="100dp"
+            android:fontFamily="@font/quintessential"
+            android:inputType="number"
             android:hint="Edad"
-            android:gravity="end"
-            />
-    </LinearLayout>
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
     <EditText
         android:id="@+id/etDireccion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Dirección"
-        />
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/quintessential"
+        android:hint="Dirección" />
+
     <CheckBox
         android:id="@+id/cbAcepto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Acepto los términos y condiciones"/>
+        android:fontFamily="@font/quintessential"
+        android:text="Acepto los términos y condiciones" />
+
     <TextView
         android:id="@+id/tvMensaje"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
-        android:text="Mensaje"/>
+        android:fontFamily="@font/quintessential"
+        android:text="" />
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
         <Button
             android:id="@+id/btnCancelar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cancelar"/>
+            android:fontFamily="@font/quintessential"
+            android:text="Cancelar" />
+
         <Button
             android:id="@+id/btnRegistrar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Registrar"/>
+            android:fontFamily="@font/quintessential"
+            android:text="Registrar" />
     </LinearLayout>
 
 </LinearLayout>
